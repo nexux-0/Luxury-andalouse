@@ -1,0 +1,70 @@
+/* --- CSS VARIABLES & RESET --- */
+:root {
+    --color-gold: #D4AF37;
+    --color-gold-light: #F4C430;
+    --color-brown-dark: #2C1810;
+    --color-brown-light: #5D4037;
+    --color-cream: #F9F7F2;
+    --color-white: #FFFFFF;
+    --color-text: #333333;
+    
+    --font-heading: 'Playfair Display', serif;
+    --font-body: 'Lato', sans-serif;
+    
+    --transition: all 0.3s ease;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-body);
+    background-color: var(--color-cream);
+    color: var(--color-text);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4 {
+    font-family: var(--font-heading);
+    color: var(--color-brown-dark);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+/* --- UTILITIES --- */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.section-padding {
+    padding: 80px 0;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: var(--color-gold);
+    color: var(--color-white);
+    font-family: var(--font-heading);
+    font-weight:
